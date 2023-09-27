@@ -1,0 +1,44 @@
+@use 'style-contact.scss';
+
+.articles-news {
+
+    .container {
+
+        .top {
+            @media (min-width: 992px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        .news {
+
+            @media (min-width: 992px) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+.nav-pages {
+    .page-numbers {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 65px;
+        margin-bottom: 50px;
+    }
+    
+    .page {
+        border: 1px solid #DAD9D3;
+        border-radius: 5px;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &:hover {
+            background-color: #DAD9D3;
+        }
+    }
+}
