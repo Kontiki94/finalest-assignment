@@ -1334,13 +1334,16 @@ html, body {
   border-radius: 30px;
   padding: 15px;
   margin-bottom: 15px;
+  border: 1px solid rgba(25, 25, 25, 0.1019607843);
+  outline: none;
 }
 .forms .container form textarea {
   border-radius: 30px;
   padding: 15px 20px;
   height: 150px;
   margin-bottom: 50px;
-  border: none;
+  border: 1px solid rgba(25, 25, 25, 0.1019607843);
+  outline: none;
 }
 .forms .container form button {
   margin-bottom: 100px;
@@ -1377,9 +1380,7 @@ html, body {
 .nav-pages .page {
   border: 1px solid #DAD9D3;
   border-radius: 5px;
-  padding: 5px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 5px 13px;
 }
 .nav-pages .page:hover {
   background-color: #DAD9D3;
