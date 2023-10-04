@@ -17,6 +17,7 @@ html, body {
 
 .btn-yellow {
   background-color: #F9D783;
+  transition: background-color 0.2s ease-in-out;
   border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
@@ -36,6 +37,7 @@ html, body {
 
 .btn-transparent {
   background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
@@ -55,6 +57,7 @@ html, body {
 
 .btn-black {
   background-color: #191919;
+  transition: background-color 0.2s ease-in-out;
   border: 1px solid #191919;
   color: #ffffff;
   text-decoration: none;
@@ -293,69 +296,11 @@ header .container .menu .main-menu .btn-login {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
 }
 .brands img {
   width: 100%;
   height: auto;
-}
-
-.project-and-case .container .section-title {
-  text-align: center;
-}
-.project-and-case .container .project-and-cases-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-@media (min-width: 768px) {
-  .project-and-case .container .project-and-cases-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.project-and-case .container .project-and-cases-grid .project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  color: #191919;
-  text-decoration: none;
-}
-.project-and-case .container .project-and-cases-grid .project img {
-  width: 100%;
-  height: auto;
-}
-.project-and-case .container .project-and-cases-grid .project h3 {
-  font-family: "DM sans", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  padding-top: 35px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #DAD9D3;
-}
-.project-and-case .container .project-and-cases-grid .project .readmore {
-  padding: 15px;
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  font-family: "inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: #191919;
-}
-.project-and-case .container .project-and-cases-grid .project .readmore i {
-  margin-left: 3px;
-}
-.project-and-case .container .project-and-cases-grid .project:hover .readmore {
-  transition: 0.3s;
-  font-weight: 900;
-}
-.project-and-case .container .project-and-cases-grid .project:hover img {
-  transition: 0.3s;
-  transform: scale(0.98);
-}
-.project-and-case .container .center-content {
-  margin-top: 50px;
-  margin-bottom: 90px;
 }
 
 .trust-us {
@@ -453,7 +398,8 @@ header .container .menu .main-menu .btn-login {
   .about-company {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom: 0px;
     gap: 170px;
     padding-right: 50px;
   }
@@ -571,6 +517,7 @@ header .container .menu .main-menu .btn-login {
 .our-services {
   background-color: #f0efe9;
   position: relative;
+  margin-top: 120px;
 }
 .our-services .penstroke {
   position: absolute;
@@ -695,7 +642,7 @@ header .container .menu .main-menu .btn-login {
     display: inline-block;
     position: absolute;
     max-width: 100%;
-    bottom: 15%;
+    bottom: 18%;
     right: 0;
   }
 }
@@ -710,6 +657,7 @@ header .container .menu .main-menu .btn-login {
 @media (min-width: 1200px) {
   .why-us .container .left .section-title {
     text-align: left;
+    padding-top: 60px;
   }
 }
 .why-us .container .left .strengths {
@@ -738,8 +686,66 @@ header .container .menu .main-menu .btn-login {
   padding: 10px;
 }
 
+.project-and-case .container .section-title {
+  text-align: center;
+}
+.project-and-case .container .project-and-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases-grid .project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+.project-and-case .container .project-and-cases-grid .project img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases-grid .project h3 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.project-and-case .container .project-and-cases-grid .project .readmore {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #191919;
+}
+.project-and-case .container .project-and-cases-grid .project .readmore i {
+  margin-left: 3px;
+}
+.project-and-case .container .project-and-cases-grid .project:hover .readmore {
+  transition: 0.3s;
+  font-weight: 900;
+}
+.project-and-case .container .project-and-cases-grid .project:hover img {
+  transition: 0.3s;
+  transform: scale(0.98);
+}
+.project-and-case .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
 .meet-team {
-  background-color: #F9D783;
+  background-color: #F0D082;
 }
 .meet-team .container .top {
   display: flex;
@@ -755,23 +761,29 @@ header .container .menu .main-menu .btn-login {
     text-align: left;
   }
 }
-.meet-team .container .top .section-title p {
-  margin-bottom: 15px;
-}
-.meet-team .container .top .btn-transparent {
-  padding-right: 80px;
-  padding-left: 80px;
+.meet-team .container .top .section-title {
+  padding-bottom: 50px;
 }
 @media (min-width: 1200px) {
-  .meet-team .container .top .btn-transparent {
-    margin-top: 40px;
+  .meet-team .container .top .section-title {
+    padding-bottom: 100px;
+  }
+}
+.meet-team .container .top .btn-yellow {
+  padding: 18px 40px;
+  border: 1px solid #191919;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .meet-team .container .top .btn-yellow {
+    margin-top: 15px;
+    margin-bottom: 0px;
   }
 }
 .meet-team .container .team-members {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .meet-team .container .team-members {
@@ -838,7 +850,7 @@ header .container .menu .main-menu .btn-login {
 }
 
 .testimonial {
-  background-color: #F9D783;
+  background-color: #F0D082;
   padding: 10px;
   padding-bottom: 50px;
 }
@@ -897,7 +909,8 @@ header .container .menu .main-menu .btn-login {
   flex-direction: column-reverse;
   gap: 15px;
   border: 1px solid #DAD9D3;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 @media (min-width: 1200px) {
   .testimonial .container .client-rating .client-box {
@@ -925,7 +938,7 @@ header .container .menu .main-menu .btn-login {
     grid-template-columns: 1fr 1fr;
   }
   .testimonial .container .client-rating .client-box .client img {
-    align-self: center;
+    margin-right: 10px;
   }
 }
 @media (min-width: 768px) and (min-width: 992px) {
@@ -945,6 +958,9 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .testimonial .container .client-rating .client-box .client .client-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   margin-left: 20px;
 }
 @media (min-width: 768px) {
@@ -985,6 +1001,7 @@ header .container .menu .main-menu .btn-login {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    text-align: left;
   }
 }
 .articles-news .container .top .section-title {
@@ -1344,6 +1361,7 @@ html, body {
   margin-bottom: 50px;
   border: 1px solid rgba(25, 25, 25, 0.1019607843);
   outline: none;
+  resize: none;
 }
 .forms .container form button {
   margin-bottom: 100px;

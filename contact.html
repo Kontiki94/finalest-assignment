@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class="wrapper-grid">
+
+        <!-- header section -->
         <header>
             <div class="container">
                 <a href="index.html"><img src="images/logo_crito.svg" alt="crito logotype"></a>
@@ -40,7 +42,7 @@
                     <div class="main-menu">
                         <nav>
                             <a href="index.html">Home</a>
-                            <a href="services.html">Service</a>
+                            <a href="service.html">Service</a>
                             <a href="news.html">News</a>
                             <a class="active" href="contact.html">Contact</a>
                         </nav>
@@ -113,14 +115,14 @@
         <section>
             <div class="forms">
                 <div class="container">
-                    <form action="POST">
+                    <form action="#" method="post">
                         <div class="title">
                             <h2>Leave us a message <br> for any information.</h2>
                         </div>
-                        <input type="text" placeholder="Name*">
-                        <input type="email" placeholder="Email*">
-                        <textarea type="text" placeholder="Your Message*"></textarea>
-                        <button class="btn-yellow">Send Message <i class="fa-regular fa-arrow-up-right"></i></button>
+                        <input type="text" id="name" placeholder="Name*" name="name" title="Enter your name" required autocomplete="off" tabindex="1">
+                        <input type="email" id="email" placeholder="Email*" name="email" title="Enter your email" required autocomplete="off" tabindex="2">
+                        <textarea class="textarea" id="message" placeholder="Enter Your Message*" name="message" title="Your message" required autocomplete="off" tabindex="3"></textarea>
+                        <button type="submit"  class="btn-yellow" title="Submit the form" tabindex="4">Send Message<i class="fa-solid fa-arrow-up-right"></i></button>
                     </form>
                 </div>
             </div>
@@ -133,6 +135,7 @@
             </div>
         </section>
     </main>
+
         <!-- footer section -->
         <footer>
          <!-- footer nav-bar -->

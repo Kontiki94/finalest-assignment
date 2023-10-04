@@ -15,12 +15,9 @@ html, body {
     grid-template-rows: auto 1fr auto;
 }
 
-// section {
-//     padding-bottom: 120px;
-// }
-
 .btn-yellow {
     background-color: #F9D783;
+    transition: background-color 0.2s ease-in-out;
     border: 1px solid #F9D783;
     color: #191919;
     text-decoration: none;
@@ -42,6 +39,7 @@ html, body {
 
 .btn-transparent {
     background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
     border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
@@ -63,6 +61,7 @@ html, body {
 
 .btn-black {
     background-color: #191919;
+    transition: background-color 0.2s ease-in-out;
     border: 1px solid #191919;
     color: #ffffff;
     text-decoration: none;
@@ -325,85 +324,11 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding-top: 90px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 
     img {
         width: 100%;
         height: auto;
-    }
-}
-
-.project-and-case {
-
-    .container{
-        
-        .section-title{
-            text-align: center;
-        }
-
-        .project-and-cases-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            
-            @media (min-width: 768px){
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .project {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto 1fr auto;
-                color: #191919;
-                text-decoration: none;
-                
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                h3 {
-                    font-family: 'DM sans', sans-serif ;
-                    font-weight: 700;
-                    font-size: 22px;
-                    padding-top: 35px;
-                    padding-bottom: 16px;
-                    border-bottom: 1px solid #DAD9D3;
-                }
-
-                .readmore {
-                    padding: 15px;
-                    display: block;
-                    text-align: right;
-                    text-decoration: none;
-                    font-family: 'inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 14px;
-                    color: #191919;
-
-                    i {
-                        margin-left: 3px;
-                    }
-                }
-
-                &:hover .readmore{
-                    // text-decoration: underline;
-                    transition: 0.3s;
-                    font-weight: 900;
-                }
-
-                &:hover img {
-                    transition: 0.3s;
-                    transform: scale(0.98);
-                }
-            }
-        }
-
-        .center-content {
-            margin-top: 50px;
-            margin-bottom: 90px;
-        }
     }
 }
 
@@ -500,7 +425,8 @@ header {
     @media(min-width: 1400px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 100px;
+        margin-top: 120px;
+        margin-bottom: 0px;
         gap: 170px;
         padding-right: 50px;
     }
@@ -631,6 +557,7 @@ header {
 .our-services {
     background-color: #f0efe9;
     position: relative;
+    margin-top: 120px;
 
     .penstroke {
         position: absolute;
@@ -645,7 +572,6 @@ header {
         }
     }
     .container {
-
         .section-title {
             text-align: center;
             padding-bottom: 50px;
@@ -768,7 +694,7 @@ header {
                 display: inline-block;
                 position: absolute;
                 max-width: 100%;
-                bottom: 15%;
+                bottom: 18%;
                 right: 0;
             }
         }
@@ -777,16 +703,13 @@ header {
             display: flex;
             flex-direction: column;
 
-            @media(min-width: 1200px) {
-                
-            }
-
             .section-title {
                 padding-bottom: 10px;
                 text-align: center;
 
                 @media (min-width: 1200px) {
                     text-align: left;
+                    padding-top: 60px;
                 }
             }
 
@@ -824,8 +747,82 @@ header {
     }
 }
 
+.project-and-case {
+
+    .container{
+        
+        .section-title{
+            text-align: center;
+        }
+
+        .project-and-cases-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            
+            @media (min-width: 768px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .project {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
+                
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3 {
+                    font-family: 'DM sans', sans-serif ;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #DAD9D3;
+                }
+
+                .readmore {
+                    padding: 15px;
+                    display: block;
+                    text-align: right;
+                    text-decoration: none;
+                    font-family: 'inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #191919;
+
+                    i {
+                        margin-left: 3px;
+                    }
+                }
+
+                &:hover .readmore{
+                    // text-decoration: underline;
+                    transition: 0.3s;
+                    font-weight: 900;
+                }
+
+                &:hover img {
+                    transition: 0.3s;
+                    transform: scale(0.98);
+                }
+            }
+        }
+
+        .center-content {
+            margin-top: 50px;
+            margin-bottom: 90px;
+        }
+    }
+}
+
 .meet-team {
-    background-color: #F9D783;
+    background-color: #F0D082;
 
     .container {
 
@@ -843,18 +840,21 @@ header {
             }
 
             .section-title {
+                padding-bottom: 50px;
 
-                p {
-                    margin-bottom: 15px;
+                @media (min-width: 1200px) {
+                    padding-bottom: 100px;
                 }
             }
 
-            .btn-transparent {
-                padding-right: 80px;
-                padding-left: 80px;
+            .btn-yellow {
+                padding: 18px 40px;
+                border: 1px solid #191919;
+                margin-bottom: 40px;
 
                 @media(min-width: 1200px) {
-                    margin-top: 40px;
+                    margin-top: 15px;
+                    margin-bottom: 0px;
                 }
             }
         }
@@ -863,7 +863,6 @@ header {
             display: flex;
             flex-direction: column;
             gap: 40px;
-            margin-top: 50px;
 
             @media (min-width: 768px) {
                 display: grid;
@@ -940,7 +939,7 @@ header {
 }
 
 .testimonial {
-    background-color: #F9D783;
+    background-color: #F0D082;
     padding: 10px;
     padding-bottom: 50px;
     
@@ -996,7 +995,8 @@ header {
                 flex-direction: column-reverse;
                 gap: 15px;
                 border: 1px solid #DAD9D3;
-                padding: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 
                 @media(min-width: 1200px) {
                     flex-direction: column;
@@ -1024,7 +1024,8 @@ header {
                         grid-template-columns: 1fr 1fr;
 
                         img {
-                            align-self: center;
+                            margin-right: 10px;
+
                             @media(min-width: 992px) {
                                 margin-left: 20px;
                             }
@@ -1041,11 +1042,13 @@ header {
                     }
                     
                     .client-info {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
                         margin-left: 20px;
 
                         @media(min-width: 768px) {
                             margin-left: 0px;
-                            // text-align: center;
                         }
 
                         @media(min-width: 1200px) {
@@ -1071,7 +1074,6 @@ header {
                 margin-top: 100px;
                 padding-left: 40px;
                 padding-right: 40px;
-                // margin-bottom: 30px;
             }
         }
     }
@@ -1092,6 +1094,7 @@ header {
                 flex-direction: row;
                 justify-content: space-between;
                 align-content: center;
+                text-align: left;
                 
             }
 
@@ -1241,7 +1244,7 @@ header {
             .btn-yellow {
                 position: relative;
                 z-index: 1;
-                
+
                 @media(min-width: 1200px) {
                     margin-right: 30px;
                 }
